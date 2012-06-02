@@ -22,16 +22,16 @@ namespace ContactsSerializer
         public MainPage()
         {
             InitializeComponent();
-            (FindName("result") as TextBox).Text = "Hello World\n";
+            (FindName("result") as TextBox).Text = "press load to serialize contacts\n";
         }
 
         private void getContacts_Click(object sender, RoutedEventArgs e)
         {
-            (sender as Button).Content = "pobrano";
+            (sender as Button).Content = "loaded";
             (sender as Button).UpdateLayout();
             (sender as Button).Click -= getContacts_Click; //remove click handler
-            Thread.Sleep(1000);
-            (sender as Button).Visibility = Visibility.Collapsed;
+            //Thread.Sleep(1000);
+            //(sender as Button).Visibility = Visibility.Collapsed;
             fillContactsTextBox();
             //MessageBox.Show("udało się");
         }

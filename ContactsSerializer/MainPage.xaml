@@ -22,10 +22,9 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-            <Button x:Name="getContacts" Content="przetwarzaj" Click="getContacts_Click"></Button>
-            <TextBox x:Name="result" AcceptsReturn="True" TextWrapping="Wrap" Height="300"></TextBox>
+            <TextBlock x:Name="ApplicationTitle" Text="Contacts-Serializer" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <Button x:Name="getContacts" Content="load contacts" Click="getContacts_Click"></Button>
+            <TextBox x:Name="result" AcceptsReturn="True" TextWrapping="Wrap" Height="626"></TextBox>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
